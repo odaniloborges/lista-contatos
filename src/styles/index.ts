@@ -12,13 +12,12 @@ const EstiloGlobal = createGlobalStyle`
 `
 
 export const Container = styled.div`
-  padding: 0 40px;
-  overflow-y: scroll;
+  display: block;
 `
 
 export const MainContainer = styled.main`
-  padding: 0 40px;
-  height: 100vh;
+  padding: 0 160px;
+  height: 80vh;
   overflow-y: scroll;
 `
 

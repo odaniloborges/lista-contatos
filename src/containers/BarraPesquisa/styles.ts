@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   padding: 16px;
-  background-color: #eeeeee;
+  background-color: #242b43;
 `
 export const Campo = styled.input`
   width: 60%;
