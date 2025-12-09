@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
-import variaveis from './variaveis'
+import vars from './vars'
 
 const EstiloGlobal = createGlobalStyle`
   * {
@@ -12,8 +12,8 @@ const EstiloGlobal = createGlobalStyle`
 `
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: 224px auto;
+  padding: 0 40px;
+  overflow-y: scroll;
 `
 
 export const MainContainer = styled.main`
@@ -30,30 +30,27 @@ export const Titulo = styled.h2`
   font-weight: bold;
 `
 
-export const Campo = styled.input`
-  padding: 8px;
-  background-color: #fff;
-  border-radius: 8px;
-  font-weight: bold;
-  color: #666666;
-  border-color: #666666;
-  width: 100%;
-`
-
 export const Botao = styled.button`
-  font-weight: bold;
+  padding: 6px 12px;
   font-size: 12px;
+  font-weight: bold;
   color: #fff;
-  padding: 8px 12px;
+  background-color: ${vars.azulEscuro};
   border: none;
-  cursor: pointer;
-  background-color: ${variaveis.azulEscuro};
   border-radius: 8px;
   margin-right: 8px;
 `
 
+export const BotaoCancelar = styled(Botao)`
+  background-color: ${vars.vermelho};
+`
+
+export const BotaoRemover = styled(Botao)`
+  background-color: ${vars.vermelho};
+`
+
 export const BotaoSalvar = styled(Botao)`
-  background-color: ${variaveis.verde};
+  background-color: ${vars.verde};
 `
 
 export default EstiloGlobal
