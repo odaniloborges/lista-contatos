@@ -17,6 +17,9 @@ export const Container = styled.div`
 
 export const MainContainer = styled.main`
   padding: 0 160px;
+`
+
+export const ListaContainer = styled.div`
   height: 80vh;
   overflow-y: scroll;
 `
