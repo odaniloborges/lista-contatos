@@ -21,7 +21,7 @@ export const MainContainer = styled.main`
 
 export const ListaContainer = styled.div`
   height: 80vh;
-  overflow-y: scroll;
+  overflow: auto;
 `
 
 export const Titulo = styled.h2`
