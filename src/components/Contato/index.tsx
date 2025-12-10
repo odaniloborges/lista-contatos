@@ -38,55 +38,63 @@ const Contato = ({
 
   return (
     <S.Card>
-      <S.Nome>
-        {estaEditando && <em>Editando: </em>}
-        {nome}
-      </S.Nome>
-      <S.Label>Telefone</S.Label>
-      <S.Telefone
-        type="telefone"
-        placeholder="Telefone"
-        disabled={!estaEditando}
-        value={telefone}
-        onChange={(evento) => setTelefone(evento.target.value)}
-      />
-      <S.Label>Email</S.Label>
-      <S.Email
-        type="email"
-        placeholder="Email"
-        disabled={!estaEditando}
-        value={email}
-        onChange={(evento) => setEmail(evento.target.value)}
-      />
-      <S.BarraAcoes>
-        {estaEditando ? (
-          <>
-            <BotaoSalvar
-              onClick={() => {
-                dispatch(
-                  editar({
-                    nome,
-                    telefone,
-                    email,
-                    id
-                  })
-                )
-                setEstaEditando(false)
-              }}
-            >
-              Salvar
-            </BotaoSalvar>
-            <BotaoCancelar onClick={cancelarEdicao}>Cancelar</BotaoCancelar>
-          </>
-        ) : (
-          <>
-            <Botao onClick={() => setEstaEditando(true)}>Editar</Botao>
-            <BotaoRemover onClick={() => dispatch(remover(id))}>
-              Remover
-            </BotaoRemover>
-          </>
-        )}
-      </S.BarraAcoes>
+      <S.GridAvatar>
+        <S.Avatar
+          src={`https://static.wikia.nocookie.net/hunterxhunter/images/3/3e/HxH2011_EP147_Gon_Portrait.png`}
+          alt={`Imagem de perfil de ${nome}`}
+        />
+      </S.GridAvatar>
+      <div>
+        <S.Nome>
+          {estaEditando && <em>Editando: </em>}
+          {nome}
+        </S.Nome>
+        <S.Label>Telefone</S.Label>
+        <S.Telefone
+          type="telefone"
+          placeholder="Telefone"
+          disabled={!estaEditando}
+          value={telefone}
+          onChange={(evento) => setTelefone(evento.target.value)}
+        />
+        <S.Label>Email</S.Label>
+        <S.Email
+          type="email"
+          placeholder="Email"
+          disabled={!estaEditando}
+          value={email}
+          onChange={(evento) => setEmail(evento.target.value)}
+        />
+        <S.BarraAcoes>
+          {estaEditando ? (
+            <>
+              <BotaoSalvar
+                onClick={() => {
+                  dispatch(
+                    editar({
+                      nome,
+                      telefone,
+                      email,
+                      id
+                    })
+                  )
+                  setEstaEditando(false)
+                }}
+              >
+                Salvar
+              </BotaoSalvar>
+              <BotaoCancelar onClick={cancelarEdicao}>Cancelar</BotaoCancelar>
+            </>
+          ) : (
+            <>
+              <Botao onClick={() => setEstaEditando(true)}>Editar</Botao>
+              <BotaoRemover onClick={() => dispatch(remover(id))}>
+                Remover
+              </BotaoRemover>
+            </>
+          )}
+        </S.BarraAcoes>
+      </div>
     </S.Card>
   )
 }

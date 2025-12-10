@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import vars from '../../styles/vars'
 
 export const Card = styled.div`
+  display: grid;
+  grid-template-columns: 200px auto;
   padding: 16px;
   background-color: #fcfcfc;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -13,6 +15,18 @@ export const Card = styled.div`
     display: flex;
     margin-bottom: 16px;
   }
+`
+
+export const GridAvatar = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+export const Avatar = styled.img`
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
 `
 
 export const Nome = styled.h3`
