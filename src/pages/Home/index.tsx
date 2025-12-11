@@ -1,3 +1,4 @@
+import BotaoAdicionar from '../../components/BotaoAdicionar'
 import BarraPesquisa from '../../containers/BarraPesquisa'
 import ListaContatos from '../../containers/ListaContatos'
 
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <BarraPesquisa />
       <ListaContatos />
+      <BotaoAdicionar />
     </>
   )
 }
