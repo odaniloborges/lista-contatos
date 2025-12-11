@@ -1,7 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { alterarTermo } from '../../store/reducers/filtro'
-import { Container, Campo } from './styles'
+import { Container } from './styles'
 import { RootReducer } from '../../store'
+import { Campo } from '../../styles'
 
 const BarraPesquisa = () => {
   const dispatch = useDispatch()

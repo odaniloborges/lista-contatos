@@ -32,6 +32,19 @@ export const Titulo = styled.h2`
   font-weight: bold;
 `
 
+export const Campo = styled.input`
+  max-width: 720px;
+  width: 100%;
+  justify-content: center;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #666666;
+  border: 1px solid #666666;
+  border-radius: 8px;
+`
+
 export const Botao = styled.button`
   padding: 6px 12px;
   font-size: 12px;

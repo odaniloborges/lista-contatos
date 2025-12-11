@@ -1,5 +1,7 @@
+import Formulario from '../../containers/Formulario'
+
 const Cadastro = () => {
-  return <div>Novo contato</div>
+  return <Formulario></Formulario>
 }
 
 export default Cadastro
