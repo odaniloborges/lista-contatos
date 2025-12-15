@@ -43,7 +43,7 @@ export const Label = styled.span`
   color: ${vars.azulEscuro};
 `
 
-export const Telefone = styled.input`
+export const Campo = styled.input`
   width: 100%;
   padding: 8px;
   font-size: 14px;
