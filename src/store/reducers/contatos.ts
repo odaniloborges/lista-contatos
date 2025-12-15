@@ -40,7 +40,7 @@ const initialState: ContatoState = {
     {
       nome: 'Frieren',
       telefone: '+819022224444',
-      email: 'aelfa_milenares@magia.jp',
+      email: 'aelfa_milenar@magia.jp',
       id: 6
     },
     {
