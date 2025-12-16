@@ -11,7 +11,8 @@ const Contato = ({
   nome: nomeOriginal,
   telefone: telefoneOriginal,
   email: emailOriginal,
-  id
+  id,
+  imagem
 }: Props) => {
   const dispatch = useDispatch()
   const [estaEditando, setEstaEditando] = useState(false)
@@ -48,7 +49,7 @@ const Contato = ({
     <S.Card>
       <S.GridAvatar>
         <S.Avatar
-          src={`https://www.shutterstock.com/image-vector/default-avatar-profile-icon-social-600nw-1906669723.jpg`}
+          src={imagem ?? undefined}
           alt={`Imagem de perfil de ${nome}`}
         />
       </S.GridAvatar>

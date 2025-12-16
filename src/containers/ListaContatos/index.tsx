@@ -37,6 +37,7 @@ const ListaContatos = () => {
                 nome={c.nome}
                 telefone={c.telefone}
                 email={c.email}
+                imagem={c.imagem}
               />
             </li>
           ))}

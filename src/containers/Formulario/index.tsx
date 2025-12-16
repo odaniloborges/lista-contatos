@@ -11,6 +11,42 @@ const Formulario = () => {
   const [nome, setNome] = useState('')
   const [telefone, setTelefone] = useState('')
   const [email, setEmail] = useState('')
+  const [imagem, setImagem] = useState<string | null>(null)
+
+  // converte arquivo para DataURL (base64)
+  const fileToDataUrl = (file: File): Promise<string> =>
+    new Promise((resolve, reject) => {
+      const reader = new FileReader()
+      reader.onload = () => {
+        resolve(String(reader.result))
+      }
+      reader.onerror = reject
+      reader.readAsDataURL(file)
+    })
+
+  const handleImageChange = async (
+    evento: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    const file = evento.target.files?.[0]
+    if (!file) {
+      setImagem(null)
+      return
+    }
+
+    // validação simples (tamanho/tipo) opcional:
+    if (!file.type.startsWith('image/')) {
+      // mostrar mensagem de erro para o usuário, se desejar
+      return
+    }
+
+    try {
+      const dataUrl = await fileToDataUrl(file)
+      setImagem(dataUrl)
+    } catch (err) {
+      // lidar com erro de leitura
+      console.error('Erro ao ler imagem', err)
+    }
+  }
 
   const cadastrarContato = (evento: FormEvent) => {
     evento.preventDefault()
@@ -19,7 +55,8 @@ const Formulario = () => {
       cadastrar({
         nome,
         telefone,
-        email
+        email,
+        imagem
       })
     )
     navigate('/')
@@ -47,6 +84,12 @@ const Formulario = () => {
           type="email"
           placeholder="Email"
         ></Campo>
+        <Campo
+          type="file"
+          accept="image/*"
+          onChange={handleImageChange}
+          // Como Campo é um styled.input, ele aceita type=file; se não for, substitua por <input />
+        />
         <BotaoSalvar type="submit">Cadastrar</BotaoSalvar>
       </Form>
     </MainContainer>

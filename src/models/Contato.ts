@@ -3,12 +3,20 @@ class Contato {
   telefone: string
   email: string
   id: number
+  imagem?: string | null | undefined
 
-  constructor(nome: string, telefone: string, email: string, id: number) {
+  constructor(
+    nome: string,
+    telefone: string,
+    email: string,
+    id: number,
+    imagem?: string | null | undefined
+  ) {
     this.nome = nome
     this.telefone = telefone
     this.email = email
     this.id = id
+    this.imagem = imagem
   }
 }
 
