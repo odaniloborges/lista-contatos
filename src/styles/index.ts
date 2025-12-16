@@ -20,7 +20,7 @@ export const MainContainer = styled.main`
 `
 
 export const ListaContainer = styled.div`
-  height: 80vh;
+  height: 90vh;
   overflow: auto;
 `
 
