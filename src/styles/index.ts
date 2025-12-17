@@ -17,6 +17,10 @@ export const Container = styled.div`
 
 export const MainContainer = styled.main`
   padding: 0 10rem;
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
 `
 
 export const ListaContainer = styled.div`

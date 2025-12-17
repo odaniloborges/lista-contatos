@@ -15,6 +15,12 @@ export const Card = styled.div`
     display: flex;
     margin-bottom: 16px;
   }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 100px auto;
+    margin-top: 20px;
+    margin-bottom: 16px;
+  }
 `
 
 export const GridAvatar = styled.div`
@@ -27,6 +33,12 @@ export const Avatar = styled.img`
   height: 150px;
   border-radius: 50%;
   margin-top: 20px;
+
+  @media (max-width: 768px) {
+    width: 80px;
+    height: 80px;
+    margin-top: 50px;
+  }
 `
 
 export const Nome = styled.h3`
@@ -38,7 +50,7 @@ export const Nome = styled.h3`
 
 export const Label = styled.span`
   padding: 4px 8px;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: bold;
   color: ${vars.azulEscuro};
 `
