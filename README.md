@@ -29,7 +29,7 @@ Projeto criado como parte do curso de Engenharia Front-End da [EBAC](https://eba
 ![React](https://img.shields.io/badge/react-%5E18.0.0-blue?logo=react)
 ![Redux](https://img.shields.io/badge/redux--toolkit-%5E1.9.0-purple?logo=redux)
 ![TypeScript](https://img.shields.io/badge/typescript-%5E5.0.0-blue?logo=typescript)
-![Styled-components](https://img.shields.io/badge/styledComponents-%?logo=styled-components)
+![Styled-components](https://img.shields.io/badge/styledComponents-%%5E5.0.0-blue?logo=styled-components)
 
 ---
 
