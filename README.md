@@ -1,46 +1,76 @@
-# Getting Started with Create React App
+# 📝 Lista de Contatos — App de contatos com React + Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto criado como parte do curso de Engenharia Front-End da [EBAC](https://ebaconline.com.br).
 
-## Available Scripts
+[GitHub](https://github.com/odaniloborges/lista-contatos)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- ✅   Cadastro, edição e remoção de contatos
+- ✅   implementação de upload de imagem para avatar
+- ✅   Responsivo para dispositivos móveis (até 768px)
+- ✅   Scroll isolado na lista de contatos
+- ✅   Estilização com `styled-components`
+- ✅   Navegação entre páginas com React Router
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React**
+- **TypeScript**
+- **Redux** (gerenciamento de estado global)
+- **React Router DOM**
+- **styled-components**
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![React](https://img.shields.io/badge/react-%5E18.0.0-blue?logo=react)
+![Redux](https://img.shields.io/badge/redux--toolkit-%5E1.9.0-purple?logo=redux)
+![TypeScript](https://img.shields.io/badge/typescript-%5E5.0.0-blue?logo=typescript)
+![Styled-components](https://img.shields.io/badge/styled--components-%5E1.0.0-purple?logo=styled-components)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🎨 Detalhes de Design
 
-### `npm run eject`
+- 📱 Layout responsive web
+- 🎯 Separação clara entre cards de contatos
+- 🔒 Acessibilidade e usabilidade como prioridade
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📱 Responsividade
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+O layout foi adaptado para funcionar bem em **dispositivos móveis**, com:
+- Scroll apenas nas tarefas, com altura de tela fixa
+- Componentes otimizados para touch e telas menores
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## 📦 Instalação e Uso Local
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone https://github.com/odaniloborges/lista-contatos.git
+cd lista-contatos
+git checkout V2
+npm install
+npm start
+```
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🧠 Sobre o Desenvolvimento
+
+Durante o curso da EBAC, o projeto foi construído com base no aprendizado prático de React, Redux e estilização moderna.
+Exercicio onde foi possível por em prática os conhecimentos adiquiridos, incluindo:
+
+- Uso e implementação das tecnologias da Stack
+- Reforço dos conhecimentos de CSS para responsividade completa
+- Separação de componentes e conteiners por responsabilidade
+
+---
+
+## 📚 Licença
+
+Projeto com fins educacionais.
