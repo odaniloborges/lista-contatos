@@ -8,116 +8,84 @@ type ContatoState = {
 const initialState: ContatoState = {
   itens: [
     {
-      nome: 'Goku',
-      telefone: '+819034567890',
-      email: 'kamehameha_master@capsulecorp.jp',
+      nome: 'Lucas Mendes',
+      telefone: '+5511991234567',
+      email: 'lucas.mendes@email.com',
       id: 1,
       imagem:
-        'https://static.wikia.nocookie.net/dragonball/images/e/e4/Goku_arrives_colored.PNG'
+        'https://plus.unsplash.com/premium_photo-1664536392896-cd1743f9c02c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
-      nome: 'Monkey D. Luffy',
-      telefone: '+829012345678',
-      email: 'reidospiratas_borracha@grandline.com',
+      nome: 'Fernanda Costa',
+      telefone: '+5521987654321',
+      email: 'nanda.costa@servidor.net',
       id: 2,
       imagem:
-        'https://static.wikia.nocookie.net/onepiece/images/b/b4/Luffy_at_Age_14.png'
+        'https://plus.unsplash.com/premium_photo-1664537980500-30bb5ec506e1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
-      nome: 'Ichigo Kurosaki',
-      telefone: '+869098765432',
-      email: 'shinigami_substituto@soul.com',
+      nome: 'Rafael Souza',
+      telefone: '+5531998765432',
+      email: 'rafa.souza@tech.io',
       id: 3,
       imagem:
-        'https://static.wikitide.net/deathbattlewiki/f/f6/Portrait.ichigokurosaki.png'
+        'https://plus.unsplash.com/premium_photo-1671656349218-5218444643d8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fHJvc3RvfGVufDB8fDB8fHww'
     },
     {
-      nome: 'Eren Yeager',
-      telefone: '+819055551212',
-      email: 'ataquedetitas@muralhas.jp',
+      nome: 'Camila Lima',
+      telefone: '+5541912345678',
+      email: 'camila.design@studio.com',
       id: 4,
       imagem:
-        'https://static.wikia.nocookie.net/shingekinokyojin/images/3/3c/Eren_Jaeger_(Anime)_character_image_(850).png'
+        'https://plus.unsplash.com/premium_photo-1688739352540-a75b102d8551?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
-      nome: 'Saitama',
-      telefone: '+829077773333',
-      email: 'punch_man_careca@hero.org',
+      nome: 'Bruno Alves',
+      telefone: '+5551923456789',
+      email: 'bruno.alves@corporativo.com',
       id: 5,
       imagem:
-        'https://static.wikia.nocookie.net/onepunchman/images/8/81/Saitama_Anime_Profile.png'
+        'https://plus.unsplash.com/premium_photo-1672239496290-5061cfee7ebb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fHJvc3RvfGVufDB8fDB8fHww'
     },
     {
-      nome: 'Frieren',
-      telefone: '+819022224444',
-      email: 'aelfa_milenares@magia.jp',
+      nome: 'Juliana Martins',
+      telefone: '+5561934567890',
+      email: 'jujumartins@webmail.com',
       id: 6,
       imagem:
-        'https://static.wikia.nocookie.net/frieren/images/9/9c/Frieren_anime_portrait.png'
+        'https://plus.unsplash.com/premium_photo-1708271125737-d016bb801b69?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fHJvc3RvfGVufDB8fDB8fHww'
     },
     {
-      nome: 'Tanjiro Kamado',
-      telefone: '+869011110000',
-      email: 'cacador_de_demonios@agua.com',
+      nome: 'Rodrigo Pereira',
+      telefone: '+5571945678901',
+      email: 'rodrigo.p@exemplo.org',
       id: 7,
       imagem:
-        "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/a/a9/Tanjiro's_sad_smile_at_Kazumi's_words.png"
+        'https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEyfHxyb3N0b3xlbnwwfHwwfHx8MA%3D%3D'
     },
     {
-      nome: 'Gon Freecss',
-      telefone: '+819077771111',
-      email: 'hunter_explorer@ilha.net',
+      nome: 'Patrícia Rocha',
+      telefone: '+5581956789012',
+      email: 'paty.rocha@artes.net',
       id: 8,
       imagem:
-        'https://static.wikia.nocookie.net/hunterxhunter/images/3/3e/HxH2011_EP147_Gon_Portrait.png'
+        'https://plus.unsplash.com/premium_photo-1723773715903-fed95064c2ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzgwfHxyb3N0b3xlbnwwfHwwfHx8MA%3D%3D'
     },
     {
-      nome: 'Killua Zoldyck',
-      telefone: '+829088880000',
-      email: 'assassino_eletrico@zoldyck.jp',
+      nome: 'Gustavo Ribeiro',
+      telefone: '+5591967890123',
+      email: 'gustavo_rib@loja.com.br',
       id: 9,
       imagem:
-        'https://static.wikia.nocookie.net/hunterxhunter/images/b/bd/HxH2011_EP147_Killua_Portrait.png'
+        'https://plus.unsplash.com/premium_photo-1706547270028-c4ea7a5f25e7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjUyfHxyb3N0b3xlbnwwfHwwfHx8MA%3D%3D'
     },
     {
-      nome: 'Vegeta',
-      telefone: '+869012312312',
-      email: 'principe_dos_saiyajins@terra.com',
+      nome: 'Mariana Dias',
+      telefone: '+5511978901234',
+      email: 'mari.dias@consultoria.com',
       id: 10,
       imagem:
-        'https://static.wikia.nocookie.net/dragonball/images/e/ed/GT_clothes_Vegeta_DBS.png'
-    },
-    {
-      nome: 'Roronoa Zoro',
-      telefone: '+819045645645',
-      email: 'caca_espadas@mugiwara.com',
-      id: 11,
-      imagem:
-        'https://static.wikia.nocookie.net/onepiece/images/8/8e/Roronoa_Zoro_Pre_Timeskip_Portrait.png'
-    },
-    {
-      nome: 'Izuku Midoriya (Deku)',
-      telefone: '+869000011112',
-      email: 'oneforall_heroi@academia.jp',
-      id: 12,
-      imagem:
-        'https://static.wikia.nocookie.net/bokunoheroacademia/images/3/3b/Obstacle_race_1.png'
-    },
-    {
-      nome: 'Usagi Tsukino (Sailor Moon)',
-      telefone: '+829066662222',
-      email: 'guerreiradavida@lua.jp',
-      id: 13,
-      imagem:
-        'https://static.wikia.nocookie.net/sailormoon/images/8/8a/Venus_Bust.png'
-    },
-    {
-      nome: 'Yuji Itadori',
-      telefone: '+869070707070',
-      email: 'sukuna_receptaculo@jujutsu.jp',
-      id: 14,
-      imagem:
-        'https://static.wikia.nocookie.net/vsbattles/images/5/5e/ItadoriIllustration1.jpg'
+        'https://plus.unsplash.com/premium_photo-1706543162519-db1284b8a09c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMyfHxyb3N0b3xlbnwwfHwwfHx8MA%3D%3D'
     }
   ]
 }
